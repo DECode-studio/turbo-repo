@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "jsx": "preserve",
-    "skipLibCheck": true,
-    "module": "ESNext",      // or "ES6"
-    // "target": "ESNext",
-    "esModuleInterop": true,
     "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "module": "ESNext",
     "target": "ES2022",
     "moduleResolution": "node",
     "paths": {
@@ -18,12 +17,4 @@
       ]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
 }

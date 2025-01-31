@@ -1,0 +1,25 @@
+{
+  "name": "turbo-repo",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "rimraf apps/*/node_modules node_modules"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "rimraf": "^6.0.1",
+    "turbo": "^2.3.3",
+    "typescript": "5.5.4"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

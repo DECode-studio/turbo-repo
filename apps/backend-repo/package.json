@@ -1,0 +1,32 @@
+{
+  "name": "backend-repo",
+  "version": "0.0.1",
+  "description": "This is backend-repo API",
+  "main": "app/index.js",
+  "author": "Nur Wahid Azhar | nur.wahid.azhar@gmail.com | https://www.linkedin.com/in/nur-wahid-azhar-675163a6 | https://porto-ku.excitech.id/user?id=nur.wahid.azhar",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/core/app",
+    "dev": "ts-node-dev src/core/app",
+    "build": "rimraf dist && tsc",
+    "ts.check": "tsc --project tsconfig.json",
+    "add-build": "git add dist"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.15",
+    "@types/express": "^4.17.20",
+    "@types/express-form-data": "^2.0.4",
+    "@types/jsonwebtoken": "^9.0.7",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-form-data": "^2.0.22",
+    "firebase-admin": "^12.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0"
+  }
+}

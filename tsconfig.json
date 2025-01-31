@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "module": "ESNext",      // or "ES6"
+    // "target": "ESNext",
+    "esModuleInterop": true,
+    "strict": true,
+    "target": "ES2022",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": [
+        "./apps/frontend-repo/src/*"
+      ],
+      "@shared/*": [
+        "packages/shared/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
